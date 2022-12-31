@@ -60,7 +60,7 @@ output: el resultado de tu conversion es 380.02 MXN */
 
 
 
-const currency = prompt("Type what currency you want to convert to MXN")
+/*const currency = prompt("Type what currency you want to convert to MXN")
 const quantity = parseInt(prompt("How much do you want to convert?"))
 const convertion  = (curr, quant) => {
     const usd = 19.01
@@ -77,3 +77,35 @@ const convertion  = (curr, quant) => {
     
 
     console.log(convertion(currency, quantity))
+    */
+
+
+/*for(let i = 1; i < 10; i++){ 
+    let resultado = '';
+    for(let j = 1; j <= i; j++){ 
+        resultado += i } 
+     
+     console.log(resultado)
+    }
+    */
+
+//Crear un programa que dado un array de strings, un número, y
+// debe de imprimir cada uno de los items del array con los caracteres 
+//limitados al número ingresado.
+//input : const example = 
+//[ 'Bacon ipsum dolor amet corned', 'Buffalo pork ball tip', 'Leberkas short loin pork loin, ]
+// ​ number: 4 ​ output: [ 'Baco', 'Buff', 'Lebe' ]
+
+const example =  [
+    "Jorge",
+    "Danny",
+    "Zoy",
+    "Alison",
+]
+let numero = 3
+const impresion = (ex, num) => {
+   let resultado = ex.map((item) => item.substr(0, num) )
+    return resultado
+}
+
+console.log(impresion(example, numero))
